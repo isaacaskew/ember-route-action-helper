@@ -13,7 +13,6 @@ const {
 } = Ember;
 
 function getRoutes(router) {
-	console.log('router', router);
   return emberArray(router._routerMicrolib.currentHandlerInfos)
     .mapBy('handler')
     .reverse();
